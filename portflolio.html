@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/336879361_8951053141632720_4106606001937981395_n.png"
+    />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/Group 5.png" onclick="openMenu()" class="img-2" alt="" />
+    </nav>
+    <div id="container" style="z-index: 1; opacity: 97%">
+      <div onclick="closeMenu()" id="close">x</div>
+      <h1 class="back-text" id="backText">Portfolio</h1>
+      <ul id="menu" onmouseover="newFunction()">
+        <li><a href="/index.html" id="menu1" onmouseover="first()">Home</a></li>
+        <li>
+          <a href="/about.html" id="menu2" onmouseover="second()">About</a>
+        </li>
+        <li>
+          <a href="/products.html" id="menu4" onmouseover="fifth()">Products</a>
+        </li>
+        <li>
+          <a href="/portflolio.html" id="menu5" onmouseover="sixth()"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div id="mz-gallery-container">
+      <div id="mz-gallery">
+        <figure>
+          <img
+            src="/img/cola.png"
+            alt="Statue of Liberty"
+            width="700"
+            height="700"
+          />
+          <figcaption>Coca Cola Advertising Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/hiroshima.png"
+            alt="Night Sky"
+            width="700"
+            height="700"
+          />
+          <figcaption>Oppenheimer Youtube Thumbnail</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/fccd28161085605.63c80cf99f12c.png"
+            alt="Ravine Between Rocks"
+            width="700"
+            height="700"
+          />
+          <figcaption>3D Text Artwork</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img src="/img/PSK.png" alt="Wheat Farm" width="700" height="700" />
+          <figcaption>Fan Art</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img src="/img/mgk.png" alt="City Street" width="700" height="700" />
+          <figcaption>Cover Art Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/789a06149737783.649d42cea9e46.png"
+            alt="Crumbling Pier"
+            width="700"
+            height="700"
+          />
+          <figcaption>Manipulation Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/japan.png"
+            alt="Foggy Mountains"
+            width="700"
+            height="700"
+          />
+          <figcaption>Car Meeting Flyer</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/tordan.png"
+            alt="Dense Forest"
+            width="700"
+            height="700"
+          />
+          <figcaption>Youtube Banner Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/money.png"
+            alt="Sunset Over Mountains"
+            width="700"
+            height="700"
+          />
+          <figcaption>Random Creation Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/cookieq.png"
+            alt="SUV in Front of Building"
+            width="700"
+            height="700"
+          />
+          <figcaption>Cookie Logo Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/ets2_20221028_195554_00.png"
+            alt="Classic Vehicle"
+            width="700"
+            height="700"
+          />
+          <figcaption>Logistic Company Manipulation Design</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/316430904_637330638090507_6448337797881999446_n.jpg"
+            alt="Stacked Rocks"
+            width="700"
+            height="700"
+          />
+          <figcaption>Pizza</figcaption>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
+      </div>
+    </div>
+    <script>
+      function openMenu() {
+        document.getElementById("container").style.right = "0%";
+        document.getElementById("menu").style.opacity = "1";
+      }
+
+      function closeMenu() {
+        document.getElementById("container").style.right = "-100%";
+        document.getElementById("menu").style.opacity = "0";
+      }
+    </script>
+  </body>
+</html>

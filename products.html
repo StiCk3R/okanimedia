@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/336879361_8951053141632720_4106606001937981395_n.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="img/Group 5.png" onclick="openMenu()" class="img-2" alt="" />
+    </nav>
+    <div id="container" style="z-index: 1; opacity: 97%">
+      <div onclick="closeMenu()" id="close">x</div>
+      <h1 class="back-text" id="backText">Products</h1>
+      <ul id="menu" onmouseover="newFunction()">
+        <li><a href="/index.html" id="menu1" onmouseover="first()">Home</a></li>
+        <li>
+          <a href="/about.html" id="menu2" onmouseover="second()">About</a>
+        </li>
+        <li>
+          <a href="/products.html" id="menu4" onmouseover="fifth()">Products</a>
+        </li>
+        <li>
+          <a href="/portflolio.html" id="menu5" onmouseover="sixth()"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+    </div>
+    <h1 class="first-text">My Web Projects</h1>
+    <div class="all-cards">
+      <div class="card card-1" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="/img/Screenshot 2023-07-17 093322.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">NFT Website</h5>
+          <p class="card-text">
+            NFT Website Build with HTML CSS and Javascript
+          </p>
+          <a href="/websites/website/index.html" class="btn btn-primary"
+            >Visit Web Page</a
+          >
+        </div>
+      </div>
+      <div class="card card-2" style="width: 18rem">
+        <img
+          style="height: 150px"
+          class="card-img-top"
+          src="/img/admin.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Admin Panel</h5>
+          <p class="card-text">
+            Admin Panel Website Build with HTML CSS Javascript and some API's
+          </p>
+          <a href="#" class="btn btn-primary">Visit Web Page</a>
+        </div>
+      </div>
+      <div class="card card-3" style="width: 18rem">
+        <img
+          style="height: 150px"
+          class="card-img-top"
+          src="/img/estate.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Real Estate Web Concept</h5>
+          <p class="card-text">
+            Real Estate Website Concept Build with HTML CSS and Javascript (Non
+            Responsive)
+          </p>
+          <a href="#" class="btn btn-primary">Visit Web Page</a>
+        </div>
+      </div>
+      <div class="card card-4" style="width: 18rem">
+        <img
+          style="height: 150px"
+          class="card-img-top"
+          src="/img/portfolio.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Web Old Prtfolio</h5>
+          <p class="card-text">
+            Old Prtfolio Website Build with HTML CSS and Javascript (Half
+            Responsive)
+          </p>
+          <a href="#" class="btn btn-primary">Visit Web Page</a>
+        </div>
+      </div>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"></div>
+    <script>
+      function openMenu() {
+        document.getElementById("container").style.right = "0%";
+        document.getElementById("menu").style.opacity = "1";
+        document.querySelector(".all-cards").style.zIndex = "0";
+      }
+
+      function closeMenu() {
+        document.getElementById("container").style.right = "-100%";
+        document.getElementById("menu").style.opacity = "0";
+        document.querySelector(".all-cards").style.zIndex = "1";
+      }
+    </script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+  </body>
+</html>
